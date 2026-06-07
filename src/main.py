@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bac7fea6b182c5ed0be3e0a7d92fd1b923c4b0893c796fc812d25aa8b11580fb
-size 298
+"""QA entry point â€” main application module."""
+import sys
+from src.utils.helpers import greet
+from src.utils.constants import APP_NAME, VERSION
+
+
+def main():
+    print(f"{APP_NAME} v{VERSION}")
+    greet("world")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
